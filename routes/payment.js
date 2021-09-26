@@ -15,7 +15,7 @@ router.post('/orders', async (req, res) => {
 		console.log(req.body, 'amount to be paid');
 
 		const options = {
-			amount: Number(req.body.total) * 100, // amount in smallest currency unit
+			amount: Number(req.body.amount) * 100, // amount in smallest currency unit
 			currency: 'INR',
 			receipt: 'receipt_order_74394',
 		};
